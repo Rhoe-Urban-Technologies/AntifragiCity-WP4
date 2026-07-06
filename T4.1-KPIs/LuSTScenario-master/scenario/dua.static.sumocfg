@@ -17,6 +17,7 @@ Author: Lara CODECA [codeca@gmail.com]
     <output>
         <summary-output value="dua.static.summary.xml"/>
         <tripinfo-output value="dua.static.tripinfo.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
         <edgedata-output value="dua.static.edgedata.xml"/>
     </output>
 
@@ -29,7 +30,9 @@ Author: Lara CODECA [codeca@gmail.com]
     <processing>
         <ignore-junction-blocker value="20"/>
         <time-to-teleport value="600"/>
+        <time-to-teleport.remove value="true"/>
         <max-depart-delay value="600"/>
+        <collision.action value="remove"/>
         <routing-algorithm value="dijkstra"/>
     </processing>
 

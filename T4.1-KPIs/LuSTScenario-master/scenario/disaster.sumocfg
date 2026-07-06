@@ -12,6 +12,7 @@
     <output>
         <summary-output value="outputs/disaster.summary.xml"/>
         <tripinfo-output value="outputs/disaster.tripinfo.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
         <edgedata-output value="outputs/disaster.edgedata.xml"/>
     </output>
 
@@ -24,7 +25,9 @@
     <processing>
         <ignore-junction-blocker value="20"/>
         <time-to-teleport value="600"/>
+        <time-to-teleport.remove value="true"/>
         <max-depart-delay value="600"/>
+        <collision.action value="remove"/>
         <routing-algorithm value="dijkstra"/>
         <ignore-route-errors value="true"/>
     </processing>
