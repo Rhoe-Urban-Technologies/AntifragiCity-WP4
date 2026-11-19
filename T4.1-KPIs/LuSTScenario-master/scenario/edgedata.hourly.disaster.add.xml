@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hourly edge data for the post-disaster run (disaster.sumocfg).
+     Needed for KPIs measured over a time window (e.g. stress in the closure hour).
+     The path is relative to this file. -->
+<additional>
+    <edgeData id="hourly" file="outputs/disaster.hourly.edgedata.xml" period="3600"/>
+</additional>

@@ -6,7 +6,7 @@
     <input>
         <net-file value="lust.net.xml"/>
         <route-files value="buslines.rou.xml,DUARoutes/local.0.rou.xml,DUARoutes/local.1.rou.xml,DUARoutes/local.2.rou.xml,transit.rou.xml"/>
-        <additional-files value="vtypes.add.xml,busstops.add.xml,e1detectors.add.xml,lust.poly.xml,tll.static.xml,disaster_closures.add.xml"/>
+        <additional-files value="vtypes.add.xml,busstops.add.xml,e1detectors.add.xml,lust.poly.xml,tll.static.xml,disaster_closures.add.xml,edgedata.hourly.disaster.add.xml"/>
     </input>
 
     <output>
@@ -18,7 +18,8 @@
 
     <time>
         <begin value="0"/>
-        <end value="86400"/>
+        <!-- 25 h, same horizon as the baseline run (get_benchmark.py) -->
+        <end value="90000"/>
         <step-length value="1"/>
     </time>
 
